@@ -5,17 +5,20 @@
     <title>메인 페이지</title>
     <style>
         #e {
-            display: flex;
-            justify-content: center; /* 수평 중앙 */
-            align-items: center;     /* 수직 중앙 */
-            height: 100vh; /* 예시를 위한 높이 */
+            width: 50%;
+            margin: 0 auto;
             }
+        a {display: block}
 
     </style>
 </head>
 <body>
     <div id="e">
-    <a href="/checkout">결제 하기</a>
+        <a href="/checkout?amount=50000">50,000원 결제 하기</a>
+        <a href="/checkout?amount=100000">100,000원 결제 하기</a>
+        <a href="/checkout?amount=1000000">1,000,000원 결제 하기</a>
+        <a href="/checkout?amount=10000000">100,000,000원 결제 하기</a>
+        <a href="/checkout?amount=1000000000">10,000,000,000원 결제 하기</a>
     </div>
 </body>
 </html>
