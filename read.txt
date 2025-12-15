@@ -1,0 +1,51 @@
+
+Response Data :
+{
+    "country": "KR",
+    "metadata": null,
+    "orderId": "MC41NjU3MzQ1MDkyNTgw",
+    "cashReceipts": null,
+    "isPartialCancelable": true,
+    "lastTransactionKey": "txrd_a01kcgj41pz9wz9g0s4ws894y69",
+    "discount": null,
+    "taxExemptionAmount": 0,
+    "suppliedAmount": 40909,
+    "secret": "ps_QbgMGZzorzjLXm5ae19jrl5E1em4",
+    "type": "NORMAL",
+    "cultureExpense": false,
+    "taxFreeAmount": 0,
+    "requestedAt": "2025-12-15T17:30:16+09:00",
+    "currency": "KRW",
+    "paymentKey": "tgen_20251215173016qzhE4",
+    "virtualAccount": null,
+    "checkout": {
+        "url": "https://api.tosspayments.com/v1/payments/tgen_20251215173016qzhE4/checkout"
+    },
+    "orderName": "토스 티셔츠 외 2건",
+    "method": "간편결제",
+    "useEscrow": false,
+    "vat": 4091,
+    "mId": "tgen_docs",
+    "approvedAt": "2025-12-15T17:30:36+09:00",
+    "balanceAmount": 45000,
+    "version": "2022-11-16",
+    "easyPay": {
+        "amount": 45000,
+        "provider": "토스페이",
+        "discountAmount": 0
+    },
+    "totalAmount": 45000,
+    "cancels": null,
+    "transfer": null,
+    "mobilePhone": null,
+    "failure": null,
+    "receipt": {
+        "url": "https://dashboard-sandbox.tosspayments.com/receipt/redirection?transactionId=tgen_20251215173016qzhE4&ref=PX"
+    },
+    "giftCertificate": null,
+    "cashReceipt": null,
+    "card": null,
+    "status": "DONE"
+}
+
+url : http://localhost:8080/success?paymentType=NORMAL&orderId=MC41NjU3MzQ1MDkyNTgw&paymentKey=tgen_20251215173016qzhE4&amount=45000
