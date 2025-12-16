@@ -11,7 +11,7 @@
 
   <body>
     <div class="box_section" style="width: 600px">
-      <img width="100px" src="https://static.toss.im/illusts/check-blue-spot-ending-frame.png" />
+      <img width="100px" src="https://static.toss.im/illusts/check-blue-spot-ending-frame.png" alt="ㅅ" />
       <h2>결제를 완료했어요</h2>
 
       <div class="p-grid typography--p" style="margin-top: 50px">
@@ -67,7 +67,12 @@
         }
 
         // TODO: 결제 성공 비즈니스 로직을 구현하세요.
-        // console.log(json);
+        await fetch("/successful",{
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },body: JSON.stringify(json),});
+        console.log(JSON.stringify(json));
         return json;
       }
       confirm().then(function (data) {

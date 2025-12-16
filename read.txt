@@ -1,3 +1,7 @@
+orderId
+orderName
+
+totalAmount
 
 Response Data :
 {
