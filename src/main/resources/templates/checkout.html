@@ -38,6 +38,7 @@
     <script>
       main();
       async function main() {
+        // TODO: URL로 정보를 받는건 보안적으로 취약, 다른방법필요
         const urlParams = new URLSearchParams(window.location.search);
         const amount = Number(urlParams.get("amount"))
         const useremail =urlParams.get("useremail")
